@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Project specific files
+prompt.md
+Portfolio6.jsx
+src/Portfolio6.jsx
