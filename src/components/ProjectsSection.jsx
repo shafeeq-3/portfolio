@@ -83,28 +83,43 @@ const ProjectsSection = () => {
       ],
     },
     {
-      id: 'lms',
-      name: 'Learning Management System',
-      tagline: 'Multi-role educational platform',
+      id: 'ems',
+      name: 'Education Management System',
+      tagline: 'Comprehensive full-stack educational institution management platform',
       icon: GraduationCap,
       color: 'amber',
-      image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80',
-      technologies: ['MERN', 'REST API', 'RBAC'],
-      systemType: 'Learning Management System',
+      image: '/education pic.png',
+      technologies: ['React 19', 'Node.js', 'MongoDB', 'Express.js', 'Socket.IO', 'JWT', 'Cloudinary', 'Tailwind CSS'],
+      systemType: 'Full-Stack Education Management System',
+      liveDemo: 'https://education-system-hw2l.vercel.app/login',
       features: [
-        'Multi-role access (Admin, Instructor, Student)',
-        'Course creation and management',
-        'Student enrollment workflow',
-        'Progress tracking system',
-        'Instructor analytics dashboard',
-        'Role-based permission system',
+        '🔐 Secure Authentication - JWT-based login with role-based access',
+        '👥 User Management - Manage students, teachers, and administrators',
+        '🎓 Academic System - Complete academic structure with programs, subjects, and classes',
+        '📊 Attendance Tracking - Digital attendance with reports',
+        '📝 Assignments - Create, submit, and grade assignments with file uploads',
+        '📄 Digital Marksheets - Generate and view results with GPA calculation',
+        '💰 Finance Module - Fee and salary management with payment tracking',
+        '📈 Analytics Dashboard - Real-time insights and performance reports',
+        '🔔 Live Notifications - Real-time updates using Socket.IO',
+        '📅 Timetable Management - Class scheduling for students and teachers',
       ],
       engineering: [
-        'Architected RBAC middleware',
-        'Designed course data structure',
-        'Built enrollment management',
-        'Implemented progress tracking',
-        'Created analytics aggregation',
+        'Designed RESTful API architecture with 50+ endpoints',
+        'MongoDB schema design with 24+ models',
+        'Responsive UI with role-specific dashboards (Admin, Teacher, Student)',
+        'Real-time features with Socket.IO for live notifications',
+        'Cloud file storage integration with Cloudinary',
+        'Secure authentication and authorization system with JWT',
+        'MVC Architecture with production-ready deployment',
+      ],
+      highlights: [
+        '✅ MVC Architecture',
+        '✅ Real-time communication',
+        '✅ Cloud file storage',
+        '✅ Role-based access control',
+        '✅ Responsive design',
+        '✅ Production-ready deployment',
       ],
     },
   ];
@@ -328,20 +343,24 @@ const ProjectsSection = () => {
                     <div className="p-6 bg-gradient-to-br from-gray-900/50 to-gray-900/30 border border-gray-800/50 rounded-xl">
                       <h4 className="text-sm font-mono text-gray-500 mb-4 tracking-wider">PROJECT LINKS</h4>
                       <div className="space-y-3">
+                        {project.liveDemo && (
+                          <a 
+                            href={project.liveDemo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-3 p-3 bg-gray-800/50 border border-gray-700/50 rounded-lg hover:border-cyan-500/50 hover:text-cyan-400 transition-all group"
+                          >
+                            <ExternalLink size={20} />
+                            <span className="text-sm">Live Demo</span>
+                            <ExternalLink size={16} className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
+                          </a>
+                        )}
                         <a 
                           href="#" 
                           className="flex items-center gap-3 p-3 bg-gray-800/50 border border-gray-700/50 rounded-lg hover:border-cyan-500/50 hover:text-cyan-400 transition-all group"
                         >
                           <Github size={20} />
                           <span className="text-sm">View Source Code</span>
-                          <ExternalLink size={16} className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
-                        </a>
-                        <a 
-                          href="#" 
-                          className="flex items-center gap-3 p-3 bg-gray-800/50 border border-gray-700/50 rounded-lg hover:border-cyan-500/50 hover:text-cyan-400 transition-all group"
-                        >
-                          <ExternalLink size={20} />
-                          <span className="text-sm">Live Demo</span>
                           <ExternalLink size={16} className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
                         </a>
                       </div>
