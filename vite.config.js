@@ -9,7 +9,7 @@ export default defineConfig({
   ],
   build: {
     target: 'esnext',
-    minify: 'terser',
+    minify: 'esbuild',
     cssMinify: true,
     rollupOptions: {
       output: {
@@ -18,13 +18,6 @@ export default defineConfig({
           'icons': ['lucide-react'],
           'lenis': ['lenis']
         }
-      }
-    },
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-        pure_funcs: ['console.log', 'console.info', 'console.debug']
       }
     },
     chunkSizeWarningLimit: 1000
