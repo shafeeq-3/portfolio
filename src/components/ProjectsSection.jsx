@@ -88,7 +88,7 @@ const ProjectsSection = () => {
       tagline: 'Comprehensive full-stack educational institution management platform',
       icon: GraduationCap,
       color: 'amber',
-      image: '/education pic.png',
+      image: '/education-pic.png',
       technologies: ['React 19', 'Node.js', 'MongoDB', 'Express.js', 'Socket.IO', 'JWT', 'Cloudinary', 'Tailwind CSS'],
       systemType: 'Full-Stack Education Management System',
       liveDemo: 'https://education-system-hw2l.vercel.app/login',
