@@ -7,8 +7,8 @@ const ExperienceSection = () => {
   const experience = {
     company: 'WebDevrs',
     role: 'Full Stack Developer',
-    period: 'February 2024 – Present',
-    location: 'Remote',
+    period: 'February 2024',
+    location: '',
   };
 
   const systems = [
@@ -187,10 +187,12 @@ const ExperienceSection = () => {
                   <Calendar size={16} />
                   <span>{experience.period}</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <MapPin size={16} />
-                  <span>{experience.location}</span>
-                </div>
+                {experience.location && (
+                  <div className="flex items-center gap-2">
+                    <MapPin size={16} />
+                    <span>{experience.location}</span>
+                  </div>
+                )}
               </div>
             </div>
             
