@@ -216,20 +216,20 @@ const SkillsSection = () => {
 
                 <div className="grid grid-cols-2 gap-3">
                   <div className="p-3 bg-gray-800/30 border border-gray-700/50 rounded-lg text-center">
-                    <div className="text-cyan-400 font-bold text-xl mb-1">E-Commerce</div>
-                    <div className="text-xs text-gray-500">Payment System</div>
+                    <div className="text-cyan-400 font-bold text-xl mb-1">Shopix</div>
+                    <div className="text-xs text-gray-500">E-Commerce</div>
                   </div>
                   <div className="p-3 bg-gray-800/30 border border-gray-700/50 rounded-lg text-center">
-                    <div className="text-emerald-400 font-bold text-xl mb-1">Chat</div>
-                    <div className="text-xs text-gray-500">Real-Time</div>
+                    <div className="text-emerald-400 font-bold text-xl mb-1">Carpet</div>
+                    <div className="text-xs text-gray-500">Business Site</div>
                   </div>
                   <div className="p-3 bg-gray-800/30 border border-gray-700/50 rounded-lg text-center">
                     <div className="text-violet-400 font-bold text-xl mb-1">Social</div>
                     <div className="text-xs text-gray-500">Media Platform</div>
                   </div>
                   <div className="p-3 bg-gray-800/30 border border-gray-700/50 rounded-lg text-center">
-                    <div className="text-amber-400 font-bold text-xl mb-1">LMS</div>
-                    <div className="text-xs text-gray-500">Education</div>
+                    <div className="text-amber-400 font-bold text-xl mb-1">Education</div>
+                    <div className="text-xs text-gray-500">Management</div>
                   </div>
                 </div>
 
