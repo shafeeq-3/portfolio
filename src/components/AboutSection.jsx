@@ -6,7 +6,7 @@ const AboutSection = () => {
     { label: 'ROLE', value: 'Full Stack Developer', icon: Code2 },
     { label: 'FOCUS', value: 'MERN / Production Web Applications', icon: Layers },
     { label: 'EXPERIENCE', value: '2+ Years', icon: Zap },
-    { label: 'CURRENT', value: 'WebDevrs', icon: Database },
+    { label: 'COMPANY', value: 'WebDevrs', icon: Database },
   ];
 
   const principles = [
