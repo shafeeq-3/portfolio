@@ -264,6 +264,63 @@ const Portfolio = () => {
               </div>
             </div>
 
+            {/* Hospital Management System */}
+            <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-start">
+              <div className="lg:pt-4 order-2 lg:order-1">
+                <div className="inline-block px-3 py-1.5 bg-stone-900 text-[10px] sm:text-[11px] uppercase tracking-wider font-semibold mb-3 sm:mb-4" style={{ color: '#ffffff' }}>
+                  Healthcare Platform
+                </div>
+                
+                <h3 className="text-[24px] sm:text-[28px] lg:text-[32px] font-bold text-stone-900 mb-3 sm:mb-4 leading-tight">
+                  Hospital Management System
+                </h3>
+                
+                <p className="text-[15px] sm:text-[16px] lg:text-[17px] text-stone-700 leading-[1.7] mb-5 sm:mb-6">
+                  Full-stack MERN hospital management system with role-based dashboards for patients, 
+                  doctors, staff, and admin. Features include appointment management, billing, reports, 
+                  and real-time notifications.
+                </p>
+
+                <div className="mb-5 sm:mb-6">
+                  <div className="text-[12px] sm:text-[14px] font-semibold text-stone-900 mb-2 sm:mb-3 uppercase tracking-wide">
+                    Technologies
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {['React', 'Vite', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Tailwind CSS'].map(tech => (
+                      <span key={tech} className="text-[12px] sm:text-[13px] px-2.5 sm:px-3 py-1 sm:py-1.5 bg-stone-100 text-stone-700 border border-stone-200">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <a
+                  href="https://hospital-management-frontend-self.vercel.app/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[14px] sm:text-[15px] text-blue-800 font-semibold hover:text-blue-900 transition-colors"
+                >
+                  <span>View Live Project</span>
+                  <span>→</span>
+                </a>
+              </div>
+
+              <div className="order-1 lg:order-2">
+                <a 
+                  href="https://hospital-management-frontend-self.vercel.app/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block border border-stone-200 overflow-hidden hover:border-stone-400 transition-colors group"
+                >
+                  <img 
+                    src="/hospital-management-pic.png"
+                    alt="Hospital Management System Dashboard"
+                    className="w-full h-auto group-hover:opacity-95 transition-opacity"
+                  />
+                </a>
+              </div>
+            </div>
+
             {/* Education System */}
             <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-start">
               <div className="lg:pt-4 order-2 lg:order-1">
